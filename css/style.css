@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 375px;
+}
+
+nav {
+  z-index: 2;
+  position: fixed;
+  width: 375px;
+  height: 100px;
+}
+
+.backarrow-icon, h5 {
+  display: inline-block;
+}
+
+.backarrow-icon {
+  padding-left: 5px;
+}
+
+h5 {
+  color: #474747;
+  font-size: 1.5em;
+  font-weight: bold;
+  float: right;
+  padding-top: 6px;
+  padding-right: 103.422px;
+}
+
+.map {
+  height: 325px;
+  position: relative;
+}
+
+/*
+.status-bar {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+*/
+
+.bus-icon {
+  position: absolute;
+  left: 4%;
+  bottom: 12%;
+}
+
+.location-icon {
+  position: absolute;
+  left: 18%;
+  bottom: 50%;
+}
+
+.busstop-location-icon {
+  position: absolute;
+  left: 55%;
+  bottom: 50%;
+}
+
+/*
+.backarrow-icon {
+  position: absolute;
+  position: fixed;
+  left: 3%;
+  bottom: 82%;
+}
+*/
+
+.nav-icon {
+  position: absolute;
+  left: 90%;
+  bottom: 82%;
+}
+
+.direction {
+  background-color: #1A508A;
+  width: 100%;
+  height: 40px;
+}
+
+.direction h1 {
+  padding-left: 20px;
+  font-size: 1.6em;
+  font-weight: 500;
+  color: #fff;
+  padding-top: 13px;
+}
+
+.reroute {
+  background-color: #EA714B;
+}
+
+.out-of-service {
+  background-color: #fff;
+}
+
+.out-of-service h1 {
+  color: #1A508A;
+}
+
+.location {
+  background-color: #4B97EA;
+  width: 100%;
+  height: 80px;
+}
+
+.eastbound.location.one, .southbound.location.one, .out-of-service.location.one, .out-of-service.location.two {
+  border-bottom: 1px solid #fff;
+}
+
+.eastbound.location.two, .southbound.location.two, .out-of-service.location.two, .out-of-service.location.three {
+  border-top: 1px solid #fff;
+}
+
+.out-of-service.location{
+  background-color: #9C9C9C;
+}
+
+.location:hover {
+  background-color: #102F52;
+}
+
+.out-of-service.location:hover {
+  background-color: #474747;
+}
+
+.content {
+  width: 70%;
+  padding-top: 10px;
+  padding-left: 20px;
+  float: left;
+}
+
+.content, .frequency {
+  display: inline-block;
+}
+
+.content h1 {
+  color: #fff;
+  font-size: 3.8em;
+  font-weight: bolder;
+  padding-bottom: 5px;
+}
+
+.content h3 {
+  color: #fff;
+  font-size: 1.6em;
+}
+
+.frequency {
+  color: #fff;
+  height: 70px;
+  width: 86px;
+  margin-right: 10px;
+  margin-top: 8px;
+  text-align: center;
+  float: right;
+  padding-right: 0px;
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 14px;
+}
+
+.frequency.normal {
+  width: 66px;
+}
+
+.frequency.normal h1 {
+  font-size: 2em;
+  font-weight: 500;
+  padding: 2px 0 2px 0;
+}
+
+
+.frequency h2, .frequency h3 {
+  font-size: 1.2em;
+}
+
+
+.frequency h4 {
+  font-size: 2em;
+  line-height: 1em;
+  padding-top: 2px;
+}
+
+#NA {
+  padding-top: 10px;
+}
