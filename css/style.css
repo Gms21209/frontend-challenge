@@ -14,32 +14,40 @@ body {
 }
 
 nav {
+  background-color: #1A508A;
   z-index: 2;
   position: fixed;
   width: 375px;
-  height: 100px;
+  height: 70px;
 }
 
-.backarrow-icon, h5 {
-  display: inline-block;
-}
 
 .backarrow-icon {
   padding-left: 5px;
 }
 
+.nav-icon {
+  float: right;
+  padding-right: 5px;
+
+}
+
 h5 {
-  color: #474747;
+  color: #fff;
   font-size: 1.5em;
-  font-weight: bold;
+  font-weight: 500;
   float: right;
   padding-top: 6px;
-  padding-right: 103.422px;
+  padding-right: 70px;
 }
 
 .map {
-  height: 325px;
+  height: 350px;
   position: relative;
+}
+
+.map-pic {
+  padding-top: 25px;
 }
 
 /*
@@ -77,11 +85,13 @@ h5 {
 }
 */
 
+/*
 .nav-icon {
   position: absolute;
   left: 90%;
   bottom: 82%;
 }
+*/
 
 .direction {
   background-color: #1A508A;
@@ -97,8 +107,12 @@ h5 {
   padding-top: 13px;
 }
 
-.reroute {
+.reroute.direction {
   background-color: #EA714B;
+}
+
+.reroute.location, .out-of-service.location {
+  height: 80px;
 }
 
 .out-of-service {
@@ -112,7 +126,7 @@ h5 {
 .location {
   background-color: #4B97EA;
   width: 100%;
-  height: 80px;
+  height: 100px;
 }
 
 .eastbound.location.one, .southbound.location.one, .out-of-service.location.one, .out-of-service.location.two {
@@ -140,9 +154,10 @@ h5 {
   padding-top: 10px;
   padding-left: 20px;
   float: left;
+  color: #fff;
 }
 
-.content, .frequency {
+.content, .arrival {
   display: inline-block;
 }
 
@@ -154,11 +169,17 @@ h5 {
 }
 
 .content h3 {
-  color: #fff;
-  font-size: 1.6em;
+  font-weight: 500;
+  font-size: 1.4em;
 }
 
-.frequency {
+.content h4 {
+  font-style: italic;
+  padding-top: 6px;
+  font-size: 1.2em;
+}
+
+.arrival {
   color: #fff;
   height: 70px;
   width: 86px;
@@ -172,28 +193,30 @@ h5 {
   padding-bottom: 14px;
 }
 
-.frequency.normal {
-  width: 66px;
+.arrival.normal {
+  width: 56px;
 }
 
-.frequency.normal h1 {
-  font-size: 2em;
+.arrival.normal h1, .arrival.reroute h1 {
+  font-size: 2.6em;
   font-weight: 500;
-  padding: 2px 0 2px 0;
+  padding: 8px 0 2px 0;
 }
 
+.arrival.normal h3 {
+  font-size: 1.4em;
+}
 
-.frequency h2, .frequency h3 {
+.arrival h2 {
   font-size: 1.2em;
 }
 
-
-.frequency h4 {
+.arrival h4 {
   font-size: 2em;
   line-height: 1em;
   padding-top: 2px;
 }
 
-#NA {
-  padding-top: 10px;
+.arrival.reroute {
+  width: 66px;
 }
